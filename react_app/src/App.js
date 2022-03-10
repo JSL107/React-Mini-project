@@ -1,21 +1,21 @@
 import './App.css';
+import Nav from './components/Navigation/Nav';
+import Banner from './components/Banner/Banner';
+import HairStyle from './components/HairStyle/HairStyle';
+import Reserve from './components/Reserve/Reserve';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+    {/*Navigator 부분*/}
+    <Nav />
+    {/*이미지 큰 사진 부분*/}
+    <Banner />
+    {/* 머리스타일 사진 부분*/}
+    <HairStyle />
+    {/*예약기능 부분*/}
+    <Reserve />
     </div>
   );
 }
