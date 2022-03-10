@@ -1,8 +1,8 @@
 import './App.css';
-import Nav from './Components/Navigation/Nav';
-import Banner from './Components/Banner/Banner';
-import HairStyle from './Components/HairStyle/HairStyle';
-import Reserve from './Components/Reserve/Reserve';
+import Nav from './components/Navigation/Nav';
+import Banner from './components/Banner/Banner';
+import HairStyle from './components/HairStyle/HairStyle';
+import Reserve from './components/Reserve/Reserve';
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
     <Nav />
     {/*이미지 큰 사진 부분*/}
     <Banner />
-    
+
     {/*예약기능 부분*/}
     <Reserve />
 
