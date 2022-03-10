@@ -4,7 +4,7 @@ import './Nav.css'
 const Nav = () => {
   return (
     <div className='navicontainer'>
-      <h2 className='storeTitle'>CutCut</h2>
+      <a href='' className='storeTitle'>CutCut</a>
     </div>
   )
 }

@@ -1,8 +1,8 @@
 import './App.css';
-import Nav from './components/Navigation/Nav';
-import Banner from './components/Banner/Banner';
-import HairStyle from './components/HairStyle/HairStyle';
-import Reserve from './components/Reserve/Reserve';
+import Nav from './Components/Navigation/Nav';
+import Banner from './Components/Banner/Banner';
+import HairStyle from './Components/HairStyle/HairStyle';
+import Reserve from './Components/Reserve/Reserve';
 
 function App() {
   return (
