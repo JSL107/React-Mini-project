@@ -9,14 +9,13 @@
   margin-bottom: 50px;
 }
 
-  
-
 .navicontainer .storeTitle {
-  font-size: 30px;
+  font-size: 35px;
   border: 5px solid #323da0;
   color: #000;
   width: 200px;
   height: 50px;
   border-radius: 50%;
-  margin: 0 auto;
+  margin: auto auto;
+  text-decoration-line : none
 }
