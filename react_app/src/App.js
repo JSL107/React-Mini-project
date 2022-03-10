@@ -12,10 +12,12 @@ function App() {
     <Nav />
     {/*이미지 큰 사진 부분*/}
     <Banner />
-    {/* 머리스타일 사진 부분*/}
-    <HairStyle />
+    
     {/*예약기능 부분*/}
     <Reserve />
+
+    {/* 머리스타일 사진 부분*/}
+    <HairStyle />
     </div>
   );
 }

@@ -14,7 +14,7 @@ const Banner = () => {
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <br></br>
-          <button class="reserveButton">예약</button>
+          <button className="reserveButton">예약</button>
       </div>
     </div>
 
