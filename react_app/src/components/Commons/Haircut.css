@@ -1,0 +1,19 @@
+.book{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 0.1rem solid #efefef;
+}
+
+.book h3 {
+    /* 상 우 하 자 (시계 방향) */
+    margin: 0 0 0 0.25rem;
+}
+
+.price{
+    margin-top: 0.25rem;
+    font-weight: bold;
+    color: #4a69bd;
+    font-size: 1.25rem;
+}
