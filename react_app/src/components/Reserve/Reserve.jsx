@@ -3,7 +3,7 @@ import './Reserve.css'
 
 const Reservation = () => {
   return (
-    <div className='reservContent'>
+    <div className='reserveContent'>
         Select Your Hair Style
     </div>
   )
