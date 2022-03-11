@@ -1,7 +1,7 @@
 import React from 'react'
 import './Reserve.css'
 
-const Reservation = () => {
+const Reservation = (props) => {
   return (
     <div className='reserveContent'>
         Select Your Hair Style

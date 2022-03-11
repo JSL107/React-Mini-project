@@ -1,11 +1,11 @@
 import React from 'react'
 
 // 형태를 만들어둔 상태
-const hairContext = React.createContext({
+const HairContext = React.createContext({
     items: [],
     totalAmount: 0,
     addItem: (item) => { },
     removeItem: (id) => { }
 });
 
-export default hairContext
+export default HairContext

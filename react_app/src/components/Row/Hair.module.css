@@ -1,27 +1,27 @@
 .hairContent {
-    border-top: 2px solid #ccc;
     display: flex;
+    align-items: stretch;
     margin: 0 auto;
     width: 80%;
     background: white;
-    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 100px;
     padding-top: 50px;
-    /* flex-wrap: wrap;
-    align-items: stretch;
-    justify-content: space-between; */
+    border-top: 2px solid #ccc;
 }
 
-/* .hairContent .hairBox {
+.hairContent .hairBox {
     position: relative;
-} */
+}
 
-/* .hairBox .styleImage {
+.hairBox .styleImage {
     position: relative;
     height: auto;
     margin: 0 auto;
     overflow: hidden;
-} */
-/* 
+}
+
 .styleImage img {
     width: auto;
     height: 400px;
@@ -50,4 +50,4 @@ p.price {
     line-height: 18px;
     word-wrap: break-word;
     word-break: break-all;
-} */
+}
