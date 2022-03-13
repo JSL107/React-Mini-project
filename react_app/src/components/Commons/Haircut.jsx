@@ -42,7 +42,7 @@ const Haircut = (props) => {
 
         <div>
 
-          <Modal open={modalOpen} close={closeModal} header={props.name}>
+          <Modal open={modalOpen} close={closeModal} header={props.name} price={props.price}>
             <img className="hairImage" src={props.image}/>
             <button onClick={submitHandler} >선택완료</button>
             <button onClick={props.close}>닫기</button>

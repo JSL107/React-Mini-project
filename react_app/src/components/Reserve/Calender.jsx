@@ -5,10 +5,11 @@ import classes from '../Reserve/Calender.module.css'
 
 const Calender = ({header,close,hairprice}) => {
   const [startDate, setStartDate] = useState(new Date());
-  console.log({header});
 
   const btn = () =>  {
-    alert(startDate.toLocaleString()+"에 " + {header}.header +"과정을 예약하셨습니다.");
+    let money = hairprice*10000;
+    alert(startDate.toLocaleString()+"에 " + {header}.header +"과정을 예약하셨습니다." + "\n금액은" + money.toLocaleString('en-AU') + "원 입니다.");
+
   }
   return (
     <div>

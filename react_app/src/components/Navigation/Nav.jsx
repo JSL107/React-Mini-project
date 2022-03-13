@@ -5,7 +5,9 @@ const Nav = () => {
   return (
     <div className='navicontainer'>
       
-      <a href='localhost:3000' className='storeTitle'>CutCut</a>
+      <a href='localhost:3000' className='storeTitle'>
+        CutCut
+      </a>
     </div>
   )
 }

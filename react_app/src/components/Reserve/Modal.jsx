@@ -40,11 +40,11 @@ const hairDesign = [
 
 const Modal = (props) => {
   // 열기, 닫기, 모달 헤더 텍스트를 부모로부터 받아옴
-  const { open } = props;
+  const { open,close,header,price } = props;
   const hairContext = useContext(HairContext);
 
   // console.log(startDate);
-  console.log(hairDesign);
+  // console.log(price);
 
   const hairItems = (
     <ul>
@@ -71,7 +71,7 @@ const Modal = (props) => {
 
           {/* 사진 띄우는  */}
           <img src={props.children[0].props.src} />
-          <Calender header ={props.header} close = {props.close}/>
+          <Calender header ={props.header} close = {props.close} hairprice = {props.price}/>
           
           
         </section>
