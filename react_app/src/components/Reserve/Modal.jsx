@@ -52,13 +52,14 @@ const hairDesign = [
     onChange={(date) => {
           const d = new Date(date);
           setStartDate(d);
-          
         }}/>
         
         function btn(event) {
           // alert(d + + props.header + "를 예약했습니다.");
       }
+        
   const hairContext=useContext(HairContext);
+
   const hairItems=(
     <ul>
       {hairContext.items.map((hair)=>(
@@ -71,15 +72,7 @@ const hairDesign = [
       ))}
     </ul>
   )
-
-  const reservationContent=(
-    <>
-      {/*헤어 스타일 선택내역*/}
-      {hairItems}
-      {/*총 가격*/}
-
-    </>
-  )
+  // console.log(btn);
 
 // console.log(Calender());
   return (
@@ -93,7 +86,6 @@ const hairDesign = [
           </header>
           {/* 사진 띄우는  */}
           <img src={props.children[0].props.src}/>
-
 
           <Calender />
 

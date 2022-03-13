@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import {hairDesign} from './Modal.jsx'
 
 const Calender = () => {
   const [startDate, setStartDate] = useState(new Date());
@@ -25,7 +24,7 @@ const Calender = () => {
       
       <h3>예약 내역</h3>
       <div>{startDate.toLocaleString()}</div>
-
+      
 
 
     </div>
