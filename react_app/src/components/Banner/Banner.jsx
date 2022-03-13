@@ -28,8 +28,7 @@ const Banner = () => {
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <br></br>
           <button onClick={openModal} className="reserveButton">예약</button>
-          <Modal open={modalOpen} close={closeModal} header="고객님의 예약정보를 입력해주세요">
-            내용입력하기!
+          <Modal open={modalOpen} close={closeModal} header="예약정보를 입력해주세요">
           </Modal>
           <br></br>
           {/* <button className="reserveButton"><Reservation />예약</button> */}

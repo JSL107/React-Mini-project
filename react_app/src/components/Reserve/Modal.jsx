@@ -41,8 +41,8 @@ const Modal = (props) => {
 
   //장바구니
   const [hairs, setHairs] = useState(hairDesign);
-  const hairContext=useContext(HairContext);
 
+  const hairContext=useContext(HairContext);
   const hairItems=(
     <ul>
       {hairContext.items.map((hair)=>(
@@ -55,16 +55,19 @@ const Modal = (props) => {
     </ul>
   )
 
+
   const reservationContent=(
     <>
       {/*헤어 스타일 선택내역*/}
       {hairItems}
-      {/* 선택한 날짜*/}
-      ㅇㅇㅇㅇ
       {/*총 가격*/}
 
     </>
   )
+
+  function btnalert() {
+    alert();
+  }
 
   return (
     // 모달이 열릴때 openModal 클래스가 생성된다.
@@ -78,14 +81,8 @@ const Modal = (props) => {
 
           <Calender />
           
-          <div>
-            <h3>예약 내역</h3>
-            {reservationContent}
-          </div>
-
-
           <footer>
-            <button className='finish'>선택완료</button>
+            <button className='finish' onClick={btnalert}>선택완료</button>
             <button className="close" onClick={close}>닫기</button>
           </footer>
 

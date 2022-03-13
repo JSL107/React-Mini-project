@@ -43,7 +43,7 @@ const Haircut = (props) => {
       </div>
 
       <button onClick={openModal} className="reserveButton">선택</button>
-          <Modal open={modalOpen} close={closeModal} header="예약정보를 입력해주세요">
+          <Modal open={modalOpen} close={closeModal} header={props.name}>
           </Modal>
     </div>
   )

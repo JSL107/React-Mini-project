@@ -4,7 +4,6 @@ import Haircut from '../Commons/Haircut';
 import HairContext from '../Store/HairContext'
 import './HairStyle.css'
 
-
 const hairDesign = [
     {
         id: "cut1",
@@ -38,7 +37,6 @@ const hairDesign = [
         price: 5.5,
     }
 ];
-
 
 const HairStyle = () => {
     const [hairs, setHairs] = useState(hairDesign);
