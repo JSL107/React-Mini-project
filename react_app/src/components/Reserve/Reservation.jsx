@@ -1,8 +1,9 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import Modal from './Modal'
 import './Reservation.css'
 
-const Reservation = () => {
+const Reservation = (props) => {
+
   const reservationModalcontent=(
     <></>
   )

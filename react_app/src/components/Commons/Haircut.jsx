@@ -3,7 +3,7 @@ import './Haircut.css'
 import Button from '../Commons/Button'
 import Modal from '../Reserve/Modal'
 import HairContext from '../Store/HairContext';
-import Hair from '../Row/Hair.module.css'
+import Calender from '../Reserve/Calender';
 
 const Haircut = (props) => {
   const hairContext = useContext(HairContext);
@@ -17,7 +17,7 @@ const Haircut = (props) => {
       price: props.price
     }
     hairContext.addItem(hair);
-    alert(props.name+'를 예약하셨습니다.')
+    // alert(props.name+'를 예약하셨습니다.')
   }
 
   
@@ -31,9 +31,6 @@ const Haircut = (props) => {
     setModalOpen(false);
   };
 
-
-
-
   return (
     <div className='hairContent'>
       <Button type='submit' onClick={openModal}>
@@ -45,6 +42,7 @@ const Haircut = (props) => {
       </div>
 
         <div>
+
           <Modal open={modalOpen} close={closeModal} header={props.name}>
             <img className="hairImage" src={props.image}/>
             <button onClick={submitHandler} >선택완료</button>
