@@ -22,7 +22,7 @@
 ### 🖥 실행화면 
 
  <main page><br><br>
-![localhost_3000_](https://user-images.githubusercontent.com/95362504/158073541-60e5d534-2263-4ad1-b0d2-7c0404b0e5d4.png)
+![image](https://user-images.githubusercontent.com/95362504/158073541-60e5d534-2263-4ad1-b0d2-7c0404b0e5d4.png)
 
 
 
