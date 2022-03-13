@@ -21,9 +21,11 @@
 
 ### 🖥 실행화면 
 
- <main page><br><br>
-![image](https://user-images.githubusercontent.com/95362504/158073541-60e5d534-2263-4ad1-b0d2-7c0404b0e5d4.png)
-
+ <main page>
+  
+  <img src ="https://user-images.githubusercontent.com/95362504/158073853-c38946cc-0bab-4922-b96f-7fb4e8846b04.png" width="1000">
+<br>
+<br>
 
 
   
