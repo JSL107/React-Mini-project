@@ -1,7 +1,5 @@
-import React, { useState,  useContext } from 'react'
-import Button from '../Commons/Button'
+import React, { useState } from 'react'
 import Haircut from '../Commons/Haircut';
-import HairContext from '../Store/HairContext'
 import './HairStyle.css'
 
 const hairDesign = [

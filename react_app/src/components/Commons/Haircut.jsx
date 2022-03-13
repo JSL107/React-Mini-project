@@ -1,8 +1,9 @@
 import React, { useContext, useState } from 'react';
 import './Haircut.css'
-import HairContext from '../Store/HairContext'
 import Button from '../Commons/Button'
 import Modal from '../Reserve/Modal'
+import HairContext from '../Store/HairContext';
+import Hair from '../Row/Hair.module.css'
 
 const Haircut = (props) => {
   const hairContext = useContext(HairContext);
@@ -15,10 +16,11 @@ const Haircut = (props) => {
       name: name,
       price: props.price
     }
-    console.log(hair);
     hairContext.addItem(hair);
+    alert(props.name+'를 예약하셨습니다.')
   }
 
+  
   //modal창 열림
   const [modalOpen, setModalOpen] = useState(false);
 
@@ -31,10 +33,10 @@ const Haircut = (props) => {
 
 
 
+
   return (
     <div className='hairContent'>
-      <Button type='submit' onClick={submitHandler}>
-        {/* <img src="https://images.unsplash.com/photo-1587776535733-b4c80a99ef82?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=341&q=80"/> */}
+      <Button type='submit' onClick={openModal}>
         <img className="hairImage" src={props.image}/>
       </Button>
       <div className='styleText'>
@@ -42,13 +44,16 @@ const Haircut = (props) => {
         <div className='hairPrice'>{props.price}</div>
       </div>
 
-      <button onClick={openModal} className="reserveButton">선택</button>
+        <div>
           <Modal open={modalOpen} close={closeModal} header={props.name}>
-          </Modal>
+            <img className="hairImage" src={props.image}/>
+            <button onClick={submitHandler} >선택완료</button>
+            <button onClick={props.close}>닫기</button>
+         </Modal>
+         </div>
     </div>
   )
 }
-
 export default Haircut
 
 
