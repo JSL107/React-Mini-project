@@ -21,19 +21,13 @@
 
 ### 🖥 실행화면 
 
- <main page>
+ ## main page
   
   <img src ="https://user-images.githubusercontent.com/95362504/158073853-c38946cc-0bab-4922-b96f-7fb4e8846b04.png" width="1000">
 <br>
-<br>
-
-
   
-  
-  
- <modal page><br><br>
+ ## modal page
 ![image](https://user-images.githubusercontent.com/95362504/158073581-0122e6d3-f32a-4cc5-88d0-658adf623cfe.png)
-
-
+<br>
 ### 트러블 슈팅
  
