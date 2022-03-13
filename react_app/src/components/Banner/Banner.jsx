@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Banner.css'
 
 const Banner = () => {
@@ -10,7 +10,8 @@ const Banner = () => {
       </div>
 
       <div className='headerContent'>
-        <h1>Cutcut</h1>
+        <h1>CutCut Salon
+        </h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>

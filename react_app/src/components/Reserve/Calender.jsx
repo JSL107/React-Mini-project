@@ -1,15 +1,14 @@
 import React, { useState } from 'react';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import classes from '../Reserve/Calender.module.css'
 
-const Calender = (header,props) => {
-  // const {close} = props;
-
-  
+const Calender = ({header,close,hairprice}) => {
   const [startDate, setStartDate] = useState(new Date());
+  console.log({header});
 
   const btn = () =>  {
-    alert(startDate.toLocaleString()+"에 " +header.header +"과정을 예약하셨습니다.");
+    alert(startDate.toLocaleString()+"에 " + {header}.header +"과정을 예약하셨습니다.");
   }
   return (
     <div>
@@ -26,17 +25,17 @@ const Calender = (header,props) => {
         dateFormat="yyyy, MMMM d h:mm aa"
         value={startDate}
         onChange={(date) => {
-          // const d = new Date(date);
           setStartDate(date);
         }}
       />
 
-      <h3>예약 내역</h3>
-      <div>{startDate.toLocaleString()}</div>
+      {/* <h3>예약 내역</h3>
+      <div>{startDate.toLocaleString()}</div> */}
       <div>
-      <button onClick={btn} >선택완료</button>
-      
-    
+      <br></br>
+      <button className={classes.button} onClick={btn} >선택완료</button>
+      <button className={classes.button} onClick={close} >닫기</button>
+          
       </div>
 
 

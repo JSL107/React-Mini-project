@@ -3,7 +3,6 @@ import './Haircut.css'
 import Button from '../Commons/Button'
 import Modal from '../Reserve/Modal'
 import HairContext from '../Store/HairContext';
-import Calender from '../Reserve/Calender';
 
 const Haircut = (props) => {
   const hairContext = useContext(HairContext);
