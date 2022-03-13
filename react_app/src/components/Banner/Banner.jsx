@@ -1,7 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react';
+import Reservation from '../Reserve/Reservation.jsx'
+import Modal from '../Reserve/Modal'
 import './Banner.css'
 
 const Banner = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => {
+    setModalOpen(true);
+  };
+  const closeModal = () => {
+    setModalOpen(false);
+  };
+
+
+
   return (
     <div className='content'>
       <div className='header'>
@@ -14,8 +27,14 @@ const Banner = () => {
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <br></br>
-          <button className="reserveButton">예약</button>
+          <button onClick={openModal} className="reserveButton">예약</button>
+          <Modal open={modalOpen} close={closeModal} header="고객님의 예약정보를 입력해주세요">
+            내용입력하기!
+          </Modal>
+          <br></br>
+          {/* <button className="reserveButton"><Reservation />예약</button> */}
       </div>
+      
     </div>
 
   )

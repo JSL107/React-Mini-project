@@ -56,7 +56,6 @@ const HairStyle = () => {
     return (
         <div className='box'>
             <div className='hairContainer'>
-            {/* <div className='hairContainer'> */}
                 {hairList}
             </div>
         </div>

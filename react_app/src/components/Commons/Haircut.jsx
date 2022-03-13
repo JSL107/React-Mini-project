@@ -1,23 +1,34 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react';
 import './Haircut.css'
 import HairContext from '../Store/HairContext'
 import Button from '../Commons/Button'
-
+import Modal from '../Reserve/Modal'
 
 const Haircut = (props) => {
   const hairContext = useContext(HairContext);
     
   const submitHandler = (name) => {
-
+    
     const hair = {
       id: props.id,
       image: props.image,
-      name: props.name,
+      name: name,
       price: props.price
     }
     console.log(hair);
     hairContext.addItem(hair);
   }
+
+  //modal창 열림
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => {
+    setModalOpen(true);
+  };
+  const closeModal = () => {
+    setModalOpen(false);
+  };
+
 
 
   return (
@@ -30,6 +41,10 @@ const Haircut = (props) => {
         <div className='hairName'><h1>{props.name}</h1></div>
         <div className='hairPrice'>{props.price}</div>
       </div>
+
+      <button onClick={openModal} className="reserveButton">선택</button>
+          <Modal open={modalOpen} close={closeModal} header="예약정보를 입력해주세요">
+          </Modal>
     </div>
   )
 }
