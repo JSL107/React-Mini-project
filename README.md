@@ -31,6 +31,11 @@
 ![image](https://user-images.githubusercontent.com/95362504/158073581-0122e6d3-f32a-4cc5-88d0-658adf623cfe.png)
 <br>
 
+## 동작화면
+![KakaoTalk_20220314_101026086](https://user-images.githubusercontent.com/95362504/158088736-7c9976a4-84fc-41e1-adee-beeb64a5149e.gif)
+
+
+
 ### 트러블 슈팅
 - props를 넘겨받는데에 어려움이 있었으나 props의 기본 정의를 다시 공부하여 값을 넘겨 받을수 있게 되었다. <br>
 - img를 modal 창 안에 띄우는데 있어서 어려움이 있었으나 props값에 image도 선언하여 출력하게 되었다. <br>
