@@ -16,7 +16,8 @@
 ### 핵심 기능
   1.🔍 미용 선택 - 원하는 과정을 눌러서 선택한다.
   
-  2.📖 일정 선택 - datepicker를 이용하여 날짜를 받고 일정을 저장한다.
+  2.📖 일정 선택 - datepicker를 이용하여 날짜를 받고 일정을 저장한다. 
+  (npm install react-datepicker --save)
 
 
 ### 🖥 실행화면 
